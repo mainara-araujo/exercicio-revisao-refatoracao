@@ -1,5 +1,6 @@
 #include <string>
 #include "Empregado.hpp"
+const int ANO = 12;
 
 class Vendedor : public Empregado {
 
@@ -7,7 +8,7 @@ class Vendedor : public Empregado {
     std::string nome;  	  
 	
 	double quotaTotalAnual() {
-	  return quotaMensalVendas * 12;
+	  return quotaMensalVendas * ANO;
 	}
 	
 };
